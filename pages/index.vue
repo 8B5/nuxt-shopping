@@ -45,7 +45,7 @@ export default {
         SearchInput,
     },
     async asyncData() {
-      const res =  await fetchProducts; // axios.get('http://localhost:3000/products');
+      const res =  await fetchProducts(); // axios.get('http://localhost:3000/products');
       console.log('res',res);
       // this.products = res.data; // this를 했을 때 컴포넌트에 접근할 수 있는 this가 아님.
       const products = res.data.map((item) => {

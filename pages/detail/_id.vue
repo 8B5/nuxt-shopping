@@ -34,7 +34,7 @@ export default {
   },
   // meta 데이터
   head: {
-    title: `Shopping Item - ${this.product.name}`,
+    title: this.product ? `Shopping Item - ${this.product.name}` : 'Loading product...',
     meta: [
       {
         hid: 'description',

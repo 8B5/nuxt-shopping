@@ -33,18 +33,21 @@ export default {
     
   },
   // meta 데이터
-  head: {
-    title: this.product ? `Shopping Item - ${this.product.name}` : 'Loading product...',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: `이 상품은 00입니다.`,
-      },
-    ],
+  head(){
+    return{
+      title: `Shopping Item - ${this.product.name}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `이 상품은 ${this.product.name}입니다.`,
+        },
+      ],
+    }
   },
+
   created(){
-    console.log(this.$route);
+    // console.log(this.$route);
   },
 
   methods: {

@@ -37,7 +37,7 @@ export default {
     title: 'Shopping Item',
     meta: [
       {
-        hid: 'description',
+        hid: 'description1',
         name: 'description',
         content: `이 상품은 00입니다.`,
       },

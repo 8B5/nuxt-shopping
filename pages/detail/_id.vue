@@ -32,7 +32,17 @@ export default {
     return{product};
     
   },
-
+  // meta 데이터
+  head: {
+    title: 'Shopping Item',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: `이 상품은 00입니다.${this.product.name}`,
+      },
+    ],
+  },
   created(){
     console.log(this.$route);
   },

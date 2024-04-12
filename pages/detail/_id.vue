@@ -34,10 +34,10 @@ export default {
   },
   // meta 데이터
   head: {
-    title: 'Shopping Item',
+    title: `Shopping Item - ${this.product.name}`,
     meta: [
       {
-        hid: 'description1',
+        hid: 'description',
         name: 'description',
         content: `이 상품은 00입니다.`,
       },
